@@ -99,3 +99,8 @@ img:hover {
 dd {
     padding-bottom: 20px;
 }
+label {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
