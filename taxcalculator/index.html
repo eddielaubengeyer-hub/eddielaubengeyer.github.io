@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script>
+
+        function calculateTotal() {
+
+            var purchase =
+            Number(document.getElementById("purchase").value);
+
+            var tax = purchase * 0.0825;
+
+            var total = purchase + tax;
+
+            document.getElementById("tax").value =
+            tax.toFixed(2);
+
+            document.getElementById("total").value =
+            total.toFixed(2);
+
+        }
+
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <h2>Sales Tax Calculator</h2>
+
+
+    <form>
+
+
+        <label for="purchase">Purchase Amount:</label>
+
+        <br>
+
+        <input type="text"
+               id="purchase"
+               name="purchase"
+               value="">
+
+        <br>
+
+
+        <label for="tax">Tax Amount:</label>
+
+        <br>
+
+        <input type="text"
+               id="tax"
+               name="tax"
+               value=""
+               disabled>
+
+        <br>
+
+
+        <label for="total">Total:</label>
+
+        <br>
+
+        <input type="text"
+               id="total"
+               name="total"
+               value=""
+               disabled>
+
+        <br>
+
+        <br>
+
+
+        <input type="button"
+               value="Calculate Total"
+               onclick="calculateTotal()">
+
+
+    </form>
+
+
+</body>
+
+</html>
