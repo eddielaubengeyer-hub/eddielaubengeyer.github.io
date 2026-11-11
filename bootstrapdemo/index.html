@@ -24,15 +24,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-    <!-- Our Style Sheet -->
+    <!-- Our Files -->
 
     <link rel="stylesheet"
           href="style.css">
 
+    <script src="item.js"></script>
+
 </head>
 
 
-<body>
+<body onload="updateCheckout()">
+
 
 
     <!-- Navigation Bar -->
@@ -42,8 +45,11 @@
 
 
         <a class="navbar-brand"
-           href="#">
-            Navbar
+           id="cart-link"
+           href="cart.html">
+
+            Checkout (0)
+
         </a>
 
 
@@ -109,11 +115,16 @@
 
     <div class="jumbotron text-center banner">
 
-        <h1>Magic Shop McAllen</h1>
+
+        <h1>
+            Magic Shop McAllen
+        </h1>
+
 
         <p>
             The best magic shop in the valley
         </p>
+
 
     </div>
 
@@ -125,9 +136,6 @@
     <div id="demo"
          class="carousel slide"
          data-ride="carousel">
-
-
-        <!-- Indicators -->
 
 
         <ul class="carousel-indicators">
@@ -153,9 +161,6 @@
 
 
 
-        <!-- Slideshow Images -->
-
-
         <div class="carousel-inner">
 
 
@@ -170,11 +175,16 @@
 
                 <div class="carousel-caption">
 
-                    <h3>Spells</h3>
+
+                    <h3>
+                        Spells
+                    </h3>
+
 
                     <p>
                         100% or your money back
                     </p>
+
 
                 </div>
 
@@ -194,11 +204,16 @@
 
                 <div class="carousel-caption">
 
-                    <h3>Fortune Telling</h3>
+
+                    <h3>
+                        Fortune Telling
+                    </h3>
+
 
                     <p>
                         Most accurate in the valley
                     </p>
+
 
                 </div>
 
@@ -218,11 +233,16 @@
 
                 <div class="carousel-caption">
 
-                    <h3>Amulets, Wands and Relics</h3>
+
+                    <h3>
+                        Amulets, Wands and Relics
+                    </h3>
+
 
                     <p>
                         Best prices in the valley
                     </p>
+
 
                 </div>
 
@@ -232,9 +252,6 @@
 
         </div>
 
-
-
-        <!-- Left and Right Controls -->
 
 
         <a class="carousel-control-prev"
@@ -259,10 +276,11 @@
 
 
 
-    <!-- Body of Document -->
+    <!-- Products -->
 
 
     <div class="container text-center">
+
 
 
         <!-- First Row -->
@@ -284,9 +302,15 @@
                 </h3>
 
 
+                <p>
+                    $49.99
+                </p>
+
+
                 <input type="button"
                        value="Buy Now"
-                       class="btn btn-primary btn-lg">
+                       class="btn btn-primary btn-lg"
+                       onclick="add(0)">
 
 
             </div>
@@ -313,7 +337,8 @@
 
                 <input type="button"
                        value="Buy Now"
-                       class="btn btn-primary btn-lg">
+                       class="btn btn-primary btn-lg"
+                       onclick="add(1)">
 
 
             </div>
@@ -334,13 +359,14 @@
 
 
                 <p>
-                    $19.99
+                    $14.99
                 </p>
 
 
                 <input type="button"
                        value="Buy Now"
-                       class="btn btn-primary btn-lg">
+                       class="btn btn-primary btn-lg"
+                       onclick="add(2)">
 
 
             </div>
@@ -369,9 +395,15 @@
                 </h3>
 
 
+                <p>
+                    $49.99
+                </p>
+
+
                 <input type="button"
                        value="Buy Now"
-                       class="btn btn-primary btn-lg">
+                       class="btn btn-primary btn-lg"
+                       onclick="add(3)">
 
 
             </div>
@@ -391,9 +423,15 @@
                 </h3>
 
 
+                <p>
+                    $99
+                </p>
+
+
                 <input type="button"
                        value="Buy Now"
-                       class="btn btn-primary btn-lg">
+                       class="btn btn-primary btn-lg"
+                       onclick="add(4)">
 
 
             </div>
@@ -413,9 +451,15 @@
                 </h3>
 
 
+                <p>
+                    $14.99
+                </p>
+
+
                 <input type="button"
                        value="Buy Now"
-                       class="btn btn-primary btn-lg">
+                       class="btn btn-primary btn-lg"
+                       onclick="add(5)">
 
 
             </div>
@@ -433,9 +477,11 @@
 
     <div class="jumbotron text-center footer">
 
+
         <h2>
             Call for Ordering - 946-77-66
         </h2>
+
 
     </div>
 
